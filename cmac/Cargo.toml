@@ -13,12 +13,15 @@ keywords = ["crypto", "mac", "cmac", "omac"]
 categories = ["cryptography", "no-std"]
 
 [dependencies]
-digest = { path="../../traits-digest/digest", features = ["mac"] }
-cipher = {path="../../traits-cipher/cipher"}
+digest = { version = "0.10.3", features = ["mac"] }
+#digest = { path="../../traits-digest/digest", features = ["mac"] }
+cipher = "0.4.2"
+#cipher = {path="../../traits-cipher/cipher"}
 dbl = "0.3"
 
 [dev-dependencies]
-digest = { path="../../traits-digest/digest", features = ["dev"] }
+digest = { version = "0.10.3", features = ["dev"] }
+#digest = { path="../../traits-digest/digest", features = ["dev"] }
 hex-literal = "0.3"
 aes = "0.8"
 des = "0.8"
